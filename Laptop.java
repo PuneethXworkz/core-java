@@ -1,14 +1,13 @@
-class LaptopDetails{
-public static void main(String args[]){
+class Laptop{
 
-String brand = "Lenovo";
-int price = 24000;
-String color = "Black";
+ static String brand= Lenovo;
+	static long model = 8317368986L;
+	
+	public static void main(String args[]){
 
-System.out.println("The Laptop Brand is " + brand);
-System.out.println("The Laptop Price is " + price);
-System.out.println("The Laptop Color is " + color);
+//	 String brand;
+System.out.println("The Brand Name is " + brand);
+System.out.println("Model No is " + model);
 
 }
-
 }
