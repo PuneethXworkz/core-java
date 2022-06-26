@@ -1,0 +1,3 @@
+class Dev extends Developer{
+
+}
