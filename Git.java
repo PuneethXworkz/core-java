@@ -1,5 +1,0 @@
-class Git extends VCS{
-
-
-
-}

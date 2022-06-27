@@ -1,4 +1,0 @@
-class Dhoni extends Cricketer{
-
-
-}

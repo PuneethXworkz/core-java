@@ -1,4 +1,0 @@
-class PocoF extends MobileCompany{
-
-
-}

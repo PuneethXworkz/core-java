@@ -1,5 +1,0 @@
-class India extends Country{
-
-
-
-}
