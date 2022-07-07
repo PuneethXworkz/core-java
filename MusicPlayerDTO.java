@@ -1,6 +1,6 @@
-class MusicPlayer {
+class MusicPlayerDTO {
 	
-	public MusicPlayer(){
+	public MusicPlayerDTO(){
 		System.out.println("MusicPlayer() created");
 	}
 	

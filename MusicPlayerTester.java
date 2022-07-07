@@ -2,7 +2,7 @@ class MusicPlayerTester {
 	
 	public static void main(String args[]){
 		
-		MusicPlayer music = new MusicPlayer();
+		MusicPlayerDTO music = new MusicPlayerDTO();
 		music.setBrand("Boat");
 		music.setPrice(4999.99);
 		music.setConnectionType("Bluetooth/USB");

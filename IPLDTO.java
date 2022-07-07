@@ -1,6 +1,6 @@
-class IPL {
+class IPLDTO {
 	
-	public IPL(){
+	public IPLDTO(){
 		System.out.println("IPL () created");
 	}
 	

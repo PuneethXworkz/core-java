@@ -1,6 +1,6 @@
-class TvChannels {
+class TvChannelsDTO {
 	
-	public TvChannels(){
+	public TvChannelsDTO(){
 		System.out.println("TvChannels() created ");
 	}
 	

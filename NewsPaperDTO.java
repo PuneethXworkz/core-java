@@ -1,5 +1,5 @@
-class NewsPaper {
-	public NewsPaper(){
+class NewsPaperDTO {
+	public NewsPaperDTO(){
 		System.out.println("NewsPaper() created");
 	}
 	

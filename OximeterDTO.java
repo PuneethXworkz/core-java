@@ -1,6 +1,6 @@
-class Oximeter {
+class OximeterDTO {
 	
-	public Oximeter(){
+	public OximeterDTO(){
 		System.out.println("Oximeter() created");
 	}
 	

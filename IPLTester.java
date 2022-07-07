@@ -2,7 +2,7 @@ class IPLTester {
 	
 	public static void main(String args[]){
 		
-		IPL cricket = new IPL();
+		IPLDTO cricket = new IPLDTO();
 		cricket.setName("Indian Premier League");
 		cricket.setFormat("T20's");
 		cricket.setOrigin("India");

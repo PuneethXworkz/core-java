@@ -1,6 +1,6 @@
-class Games {
+class GamesDTO {
 	
-	public Games(){
+	public GamesDTO(){
 		System.out.println("Games() created");
 	}
 	

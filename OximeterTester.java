@@ -2,7 +2,7 @@ class OximeterTester {
 	
 	public static void main(String args[]){
 		
-		Oximeter oxi = new Oximeter();
+		OximeterDTO oxi = new OximeterDTO();
 		oxi.setBrand("Oxi-Level");
 		oxi.setPrice(549.99);
 		oxi.setType("Digital/Battery Operated");

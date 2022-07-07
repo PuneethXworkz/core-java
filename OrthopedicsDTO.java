@@ -1,6 +1,6 @@
-class Orthopedics {
+class OrthopedicsDTO {
 	
-	public Orthopedics (){
+	public OrthopedicsDTO (){
 		System.out.println("Orthopedics() created");
 	}
 	

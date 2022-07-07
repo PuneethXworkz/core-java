@@ -1,6 +1,6 @@
-class Weapons {
+class WeaponsDTO {
 	
-	public Weapons(){
+	public WeaponsDTO(){
 		System.out.println("Weapons() created");
 	}
 	

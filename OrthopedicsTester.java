@@ -3,7 +3,7 @@ class OrthopedicsTester {
 	
 	public static void main(String args[]){
 		
-		Orthopedics ortho = new Orthopedics();
+		OrthopedicsDTO ortho = new OrthopedicsDTO();
 		
 		ortho.setDoctor("Dr.Kiran");
 		ortho.setType("Surgeon");

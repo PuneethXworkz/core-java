@@ -1,6 +1,6 @@
-class Airport {
+class AirportDTO {
 	
-	public Airport(){
+	public AirportDTO(){
 		System.out.println("Airport() created");
 	}
 	

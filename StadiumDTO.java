@@ -1,6 +1,6 @@
-class Stadium {
+class StadiumDTO {
 
-public Stadium (){
+public StadiumDTO (){
 	System.out.println("Stadium object created");
 }
 

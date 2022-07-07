@@ -2,7 +2,7 @@ class GamesTester {
 	
 	public static void main(String args[]){
 
-		Games games = new Games();
+		GamesDTO games = new GamesDTO();
 		games.setName("PubG");
 		games.setOwnedBy("Krafton Technologies");
 		games.setIsAvailableIn("PlayStore & Official WebSite");

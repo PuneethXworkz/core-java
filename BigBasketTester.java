@@ -1,7 +1,7 @@
 class BigBasketTester {
 	public static void main(String args[]){
 		
-		BigBasket big = new BigBasket();
+		BigBasketDTO big = new BigBasketDTO();
 		big.setOwnedBy("Tata Digital Limited");
 		big.setTypeOfService("Online Super Market");
 		big.setOrigin("India");

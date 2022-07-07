@@ -1,7 +1,7 @@
 class NovelTester {
 	public static void main(String args[]){
 		
-		Novel novel = new Novel();
+		NovelDTO novel = new NovelDTO();
 		novel.setName("Manku Thimmana Kagga");
 		novel.setYearOfRelease(1943);
 		novel.setAuthor("DVG");

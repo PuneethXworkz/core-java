@@ -1,5 +1,5 @@
-class Novel{
-	public Novel(){
+class NovelDTO{
+	public NovelDTO(){
 	System.out.println("Novel() created");
 }
 	

@@ -2,7 +2,7 @@ class NewsPaperTester {
 	
 	public static void main(String args[]){
 		
-		NewsPaper news = new NewsPaper();
+		NewsPaperDTO news = new NewsPaperDTO();
 		news.setName("Vijay Karnataka");
 		news.setType("Daily");
 		news.setNoOfSheets(12);

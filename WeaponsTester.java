@@ -2,7 +2,7 @@ class WeaponsTester {
 	
 	public static void main(String args[]){
 		
-		Weapons weapon = new Weapons();
+		WeaponsDTO weapon = new WeaponsDTO();
 		
 		weapon.setName("M416");
 		weapon.setType("Tactical Rifle");

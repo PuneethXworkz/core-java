@@ -1,5 +1,5 @@
-class BigBasket {
-	public BigBasket(){
+class BigBasketDTO {
+	public BigBasketDTO(){
 		System.out.println("BigBasket() created ");
 	}
 	
