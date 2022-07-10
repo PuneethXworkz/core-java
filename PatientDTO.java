@@ -1,8 +1,8 @@
 class PatientDTO {
 
-public PatientDTO (){
-	System.out.println("PatientDTO () created");
-}
+	public PatientDTO (){
+		System.out.println("PatientDTO () created");
+	}
 	private int id;
 	private String name;
 	private String address;
