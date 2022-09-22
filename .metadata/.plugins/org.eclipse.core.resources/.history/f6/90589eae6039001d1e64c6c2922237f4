@@ -1,0 +1,13 @@
+package com.xworkz.relationship.dto;
+
+import javax.persistence.Table;
+
+@Entity
+@Table(name="team")
+public class Team {
+	
+	private int tid;
+	private String name;
+	
+
+}

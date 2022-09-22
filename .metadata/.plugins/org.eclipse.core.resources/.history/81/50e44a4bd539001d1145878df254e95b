@@ -1,0 +1,70 @@
+package com.xworkz.relationship;
+
+import java.util.ArrayList;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import com.xworkz.relationship.dto.Country;
+import com.xworkz.relationship.dto.Player;
+import com.xworkz.relationship.dto.State;
+import com.xworkz.relationship.dto.Team;
+
+public class TestDAO {
+	
+	public static void main(String[] args) {
+		
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("teamUnit");
+		
+		EntityManager manager = factory.createEntityManager();
+		EntityTransaction transcation = manager.getTransaction();
+		transcation.begin();
+		//State object has to be created
+		State mel = new State();
+		mel.setName("Melbourne");
+		State syd = new State();
+		syd.setName("Sydney");
+		State bri = new State();
+		bri.setName("Brisbane");
+		State ade = new State();
+		ade.setName("Adelaide");
+		//add all states to  one array list
+		
+		ArrayList<State> states = new ArrayList<State>();
+		states.add(mel);
+		states.add(syd);
+		states.add(bri);
+		states.add(ade);
+		
+		
+		//Country
+		Country aus = new Country();
+		aus.setName("Australia");
+		aus.setCode("61");
+		aus.setListOfState(states); 		//adding states arraylist
+		
+		
+		//team
+		Team team = new Team();
+		team.setName("Team Australia");
+		
+		Player plyr = new Player();		
+		plyr.setName("David Warner");
+		plyr.setSalary(76000);
+		plyr.setTeam(team);
+		plyr.setCountry(aus);
+		
+		manager.persist(plyr);
+		
+		
+		
+		transcation.commit();
+		manager.close();
+		factory.close();
+		
+		
+	}
+
+}

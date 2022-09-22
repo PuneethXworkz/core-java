@@ -1,0 +1,14 @@
+package com.xworkz.user.util;
+
+import javax.persistence.EntityManager;
+import javax.persistence.Persistence;
+
+public class EntityManagerUtil {
+	
+	EntityManager manager;
+	
+	public EntityManagerUtil() {
+		manager =Persistence.createEntityManagerFactory("user").createEntityManager();
+	}
+
+}

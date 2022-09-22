@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;hospital-management-system/src/com/xworkz/hospital/crud/Hospital.java&apos; to &apos;HospitalInf.java&apos;" description="Rename resource &apos;Hospital.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/xworkz/hospital/crud/Hospital.java" name="HospitalInf.java" stamp="1662307097934" updateReferences="true"/>
+</session>

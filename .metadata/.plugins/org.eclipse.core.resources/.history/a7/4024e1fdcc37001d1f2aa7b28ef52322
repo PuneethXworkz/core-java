@@ -1,0 +1,15 @@
+package com.xworkz.user.service;
+
+import com.xworkz.user.dto.User;
+
+public interface UserInf {
+	
+	
+	public void createUser(User user);
+	public User findUSer(int userId);
+	public User updateUser();
+	public void deleteUser(int userId);
+	
+	
+	
+}

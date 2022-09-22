@@ -1,0 +1,11 @@
+package com.xworkz.team.service;
+
+import com.xworkz.team.dto.PlayersDTO;
+
+public interface PlayersInf {
+	
+	
+	public void createPlayer();
+	public PlayersDTO getAllPlayersByCountry();
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;jdbc_day3 and daywise notes&apos; to &apos;jdbc_day3 and access file&apos;" description="Rename resource &apos;jdbc_day3 and daywise notes&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/jdbc_day3 and daywise notes" name="jdbc_day3 and access file" stamp="1661685125035" updateReferences="true"/>
+</session>

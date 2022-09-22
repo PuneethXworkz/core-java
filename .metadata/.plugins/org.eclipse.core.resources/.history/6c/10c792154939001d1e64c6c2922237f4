@@ -1,0 +1,23 @@
+package com.xworkz.team.dto;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity
+@Table(name="players")
+@Data
+public class PlayersDTO {
+	
+	
+	private int playerId;
+	private String name;
+	private String country;
+	private String salary;
+	private String state;
+	private int age;
+	
+	
+
+}

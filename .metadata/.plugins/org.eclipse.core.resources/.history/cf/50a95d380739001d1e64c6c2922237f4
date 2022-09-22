@@ -1,0 +1,9 @@
+package com.xworkz.team.service;
+
+public interface PlayersInf {
+	
+	
+	public void createPlayer();
+	public Player getAllPlayersByCountry();
+	
+}

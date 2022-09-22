@@ -1,0 +1,10 @@
+package com.xworkz.team.util;
+
+import javax.persistence.EntityManager;
+
+public class EntityManagerUtil {
+	
+	private EntityManager entityManager;
+	
+	
+}

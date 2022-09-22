@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;jdbc_day3 and access file/src/main/java/com/xworkz/jdbc_day5.java&apos; to &apos;Acess files.java&apos;" description="Rename resource &apos;jdbc_day5.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/xworkz/jdbc_day5.java" name="Acess files.java" stamp="1661685260239" updateReferences="true"/>
+</session>

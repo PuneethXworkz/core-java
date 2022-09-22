@@ -1,0 +1,31 @@
+package com.xworkz.team.dto;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity
+@Table(name="players")
+@Data
+public class PlayersDTO {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "Players_Id")
+	private int playerId;
+	@Column(name="Players_Name")
+	private String name;
+	@Column(name="Players_Country")
+	private String country;
+	private String salary;
+	private String state;
+	private int age;
+	
+	
+
+}

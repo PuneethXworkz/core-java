@@ -1,0 +1,13 @@
+package com.xworkz.user.util;
+
+import javax.persistence.EntityManager;
+
+public class EntityManagerUtil {
+	
+	EntityManager manager;
+	
+	public EntityManagerUtil() {
+		
+	}
+
+}

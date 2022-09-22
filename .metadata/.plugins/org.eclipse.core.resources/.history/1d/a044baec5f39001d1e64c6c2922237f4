@@ -1,0 +1,10 @@
+package com.xworkz.relationship.dto;
+
+public class State {
+	
+	
+	private int sid;
+	private String name;
+	
+
+}

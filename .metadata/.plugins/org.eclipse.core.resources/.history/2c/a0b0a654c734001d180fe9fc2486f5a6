@@ -1,0 +1,25 @@
+package com.xworkz;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+public class DataTester {
+
+	public static void main(String[] args) {
+		
+		UserData user = new UserData();
+		
+		EntityManagerFactory managerFactory = Persistence.createEntityManagerFactory("user");
+		
+		EntityManager manager = managerFactory.createEntityManager();
+		
+		EntityTransaction transaction = manager.getTransaction();
+		transaction.begin();
+		
+		transaction.commit();
+		
+	}
+
+}

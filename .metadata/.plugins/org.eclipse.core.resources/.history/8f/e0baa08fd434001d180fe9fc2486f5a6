@@ -1,0 +1,21 @@
+package com.xworkz;
+
+import java.util.Base64;
+import java.util.Base64.Decoder;
+import java.util.Base64.Encoder;
+
+public class EncryptBase64 {
+
+	public static void main(String[] args) {
+		
+		Encoder encode = Base64.getEncoder();
+		String originalString = "Hello Welcome to Xworkz";
+		String encryptedString = encode.encodeToString(originalString.getBytes());
+		
+		System.out.println("encrypted String :" + encryptedString);
+		
+		Decoder decode = Base64.getDecoder();
+		
+	}
+
+}

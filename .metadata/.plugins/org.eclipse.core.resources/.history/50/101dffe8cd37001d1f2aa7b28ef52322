@@ -1,0 +1,5 @@
+package com.xworkz.user.util;
+
+public class EntityManagerUtil {
+
+}

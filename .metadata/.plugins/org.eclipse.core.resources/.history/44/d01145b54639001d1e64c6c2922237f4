@@ -1,0 +1,11 @@
+package com.xworkz.team.service;
+
+import com.xworkz.team.util.EntityManagerUtil;
+
+public class PlayersService {
+	
+	EntityManagerUtil manager = new EntityManagerUtil();
+	
+	
+
+}

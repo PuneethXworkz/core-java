@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Kiran\eclipse-workspace\userRegistrationJpa"/>
+			<item value="C:\Users\Kiran\eclipse-workspace\studentjpa-demo"/>
+			<item value="C:\Users\Kiran\eclipse-workspace\jpa-demo"/>
+			<item value="C:\Users\Kiran\eclipse-workspace\jpa-demo\src\main\java\com\xworkz\app\Student.java"/>
+			<item value="C:\Users\Kiran\eclipse-workspace\mavenapp"/>
+			<item value="C:\Users\Kiran\eclipse-workspace\helper\src\com\xworkz\helper\CarFactory.java"/>
+			<item value="C:\Users\Kiran\eclipse-workspace\mavenapp\src\test"/>
+			<item value="C:\Users\Kiran\eclipse-workspace\puneeth"/>
+			<item value="C:\Users\Kiran\eclipse-workspace\collections"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.xworkz"/>
+			<item value="xworkz.demojpa"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="CricketTeamjpa"/>
+			<item value="userRegistrationJpa"/>
+			<item value="employeejpa"/>
+			<item value="studentjpa-demo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

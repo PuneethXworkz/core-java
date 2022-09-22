@@ -1,0 +1,13 @@
+package com.xworkz.team.service;
+
+import com.xworkz.team.dto.PlayersDTO;
+
+public interface PlayersInf {
+	
+	
+	public PlayersDTO createPlayer(PlayersDTO player);
+	public PlayersDTO getAllPlayersByCountry();
+	public PlayersDTO getPlayerNameByCountry();
+	public PlayersDTO getAllPlayersWhoseAgeLessThan35();
+	
+}

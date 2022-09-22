@@ -1,0 +1,5 @@
+package com.xworkz.relationship.dto;
+
+public class Country {
+
+}

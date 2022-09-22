@@ -1,0 +1,22 @@
+package com.xworkz.team;
+
+import com.xworkz.team.dto.PlayersDTO;
+import com.xworkz.team.service.PlayersService;
+
+public class PlayersDAO {
+
+	public static void main(String[] args) {
+		
+		System.out.println("main method started");
+		
+		PlayersDTO player = new PlayersDTO();
+		player.setPlayerId(111);
+		player.setName("M.S.Dhoni");
+		player.setState("Jharkhand");
+		player.setAge(41);
+		player.setCountry("India");
+		player.setSalary("85000");
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.xworkz;
+
+import com.sun.xml.fastinfoset.Encoder;
+
+public class EncryptBase64 {
+
+	public static void main(String[] args) {
+		
+		
+		Encoder encode = 
+	}
+
+}

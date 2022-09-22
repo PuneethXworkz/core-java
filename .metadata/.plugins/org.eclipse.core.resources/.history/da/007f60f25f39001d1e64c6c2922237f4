@@ -1,0 +1,15 @@
+package com.xworkz.relationship.dto;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="table")
+public class State {
+	
+	
+	private int sid;
+	private String name;
+	
+
+}
