@@ -1,0 +1,22 @@
+package java.com.xworkz;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class MvcController {
+
+	@RequestMapping("/concat")
+	public ModelAndView add(HttpServletRequest request, HttpServeltResponse response) {
+		
+		String fName =request.getParameter("firstName");
+		String lName =request.getParameter("lastName");
+	
+		ModelAndView mv = new ModelAndView("");
+	
+		return mv;
+	}
+}

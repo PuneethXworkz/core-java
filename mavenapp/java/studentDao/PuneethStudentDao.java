@@ -35,7 +35,7 @@ public class PuneethStudentDao {
 		st.setAge(age);		
 		st.setYearOfPassOut(yearOfPassOut);
 		
-		System.out.println("------------student----------"+st.toString());
+//		System.out.println("------------student----------"+st.toString());
 		Connection con = JDBCConnectionUtil.getConnection();
 		
 		//step 3 : create prepare statement
@@ -44,6 +44,9 @@ public class PuneethStudentDao {
 					
 			//when we use select query we use getter method
 			//when we use prepared statement we use setter method
+			
+			//executeQuery-select i.e only fetching
+			//executeUpdate-create(insert), update, delete
 			
 			PreparedStatement psmt = con.prepareStatement(insertQuery);
 			

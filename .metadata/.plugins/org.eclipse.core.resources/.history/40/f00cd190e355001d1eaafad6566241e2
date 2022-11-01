@@ -1,0 +1,11 @@
+package com.xworkz.spring;
+
+public class TestPoco {
+
+	public static void main(String[] args) {
+		Poco fs = new Poco();
+		fs.c
+	}
+	
+	
+}

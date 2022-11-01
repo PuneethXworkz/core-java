@@ -1,0 +1,20 @@
+package com.xworkz.spring;
+
+public class Poco {
+	
+	@
+	MobileProcessor cpu;
+	
+	public void config() {
+		System.out.println("OctaCore,18MP,256GB");
+		cpu.process();
+	}
+
+	public MobileProcessor getCpu() {
+		return cpu;
+	}
+
+	public void setCpu(MobileProcessor cpu) {
+		this.cpu = cpu;
+	}
+}

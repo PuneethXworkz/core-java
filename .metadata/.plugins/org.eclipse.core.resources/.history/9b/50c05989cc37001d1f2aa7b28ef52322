@@ -1,5 +1,0 @@
-package com.xworkz.user.service;
-
-public interface User {
-
-}

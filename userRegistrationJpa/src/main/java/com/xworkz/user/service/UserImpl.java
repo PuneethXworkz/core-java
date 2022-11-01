@@ -8,7 +8,7 @@ import javax.persistence.Query;
 
 //import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import com.xworkz.user.dto.User;
+ import com.xworkz.user.dto.User;
 import com.xworkz.user.util.EntityManagerUtil;
 
 public class UserImpl implements UserInf{
@@ -38,7 +38,6 @@ EntityManagerUtil managerUtil = new EntityManagerUtil();
 		
 		for (User user : listUser) {
 			returnUserId = user;
-			
 		}
 		
 		return returnUserId;
@@ -51,9 +50,13 @@ EntityManagerUtil managerUtil = new EntityManagerUtil();
 
 	@Override
 	public void deleteUserById(int userId) {
-		
+		Query query= managerUtil.getEntityManager().createNamedQuery("deleteById");
 		managerUtil.getEntityManager().getTransaction().begin();
-		managerUtil.getEntityManager().remove(userId);
+		
+		//managerUtil.getEntityManager().remove(user);
+		
+		query.setParameter("id", userId);
+		query.executeUpdate();
 		managerUtil.getEntityManager().getTransaction().commit();
 		
 	}

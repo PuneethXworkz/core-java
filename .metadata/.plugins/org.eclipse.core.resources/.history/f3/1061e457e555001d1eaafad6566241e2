@@ -1,0 +1,8 @@
+package com.xworkz.spring;
+
+public class Poco {
+	
+	public void config() {
+		System.out.println("OctaCore,18MP,256GB");
+	}
+}

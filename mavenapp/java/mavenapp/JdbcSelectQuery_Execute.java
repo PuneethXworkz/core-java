@@ -70,7 +70,7 @@ public static void main(String[] args) {
  using Scanner input 
  
  
- Result is a interface which holds tale data
+ Result is a interface which holds table data
  */
 
 

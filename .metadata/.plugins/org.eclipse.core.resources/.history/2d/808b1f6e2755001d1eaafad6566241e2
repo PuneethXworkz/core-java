@@ -1,0 +1,10 @@
+
+public class Poco {
+
+	
+	public void config() {
+		
+		System.out.println("");
+	}
+	
+}

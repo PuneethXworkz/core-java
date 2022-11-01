@@ -15,17 +15,16 @@ public class UserDAO {
 		
 		System.out.println("main method started");
 		
-		User raja = new User();		
-		//raja.setId(12);
-		raja.setName("Pakru");
-		raja.setEmail("Pakru@gmail.com");
-		raja.setAge(26);
+		User user = new User();		
+		user.setName("Pakru");
+		user.setEmail("Pakru@gmail.com");
+		user.setAge(26);
 		
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		java.util.Date dob;
 		try {
 			dob = dateFormat.parse("1993-03-03");
-			raja.setDateOfBirth(dob);		//yyy/mm/dd
+			user.setDateOfBirth(dob);		//yyy/mm/dd
 			
 		} catch (ParseException e) {
 			e.printStackTrace();
@@ -33,21 +32,20 @@ public class UserDAO {
 		
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 		
-		raja.setPassword(encoder.encode("Raji@12345"));
+		user.setPassword(encoder.encode("pakru@12345"));
 		
 		UserImpl userImpl = new UserImpl();
-		//userImpl.createUser(raja);
+		//userImpl.createUser(user);
 		
 //		User userEmail=userImpl.findByUserEmail("raji143@gmail.com");
 //		System.out.println("After fetching the data "+userEmail.toString());
 		
 		
-		//userImpl.findUserById(3);
-		//User userId= userImpl.findUserById(5);
-		//System.out.println("Find user By id :"+userId.toString());
+		//User userId= userImpl.findUserById(3);
+		//System.out.println("Find user By id :"+userId);
 		
 		
-		userImpl.deleteUserById(4);
+		userImpl.deleteUserById(3);
 	
 		
 		System.out.println("Main method ended");

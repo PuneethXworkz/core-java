@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="s" class="com.xworkz.dp.Job">
+    
+    <!-- Setter Injection(String, int type) example -->
+    <!-- One class is one bean  -->
+    <property name="id" value="101"></property>
+    <property name="name" value="Sakshi"></property>
+    <property name="rollNo" value="2022101"></property>  
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+    
+
+<!-- the above bean tag represent the java object code
+bean is  nothing an object
+every bean will have two attributes,
+id is alias name
+class is fully qulaified pojo class name
+
+Student s = new Student();
+s.setId(111);
+s.setName("Sakshi");
+s.setRollNo(2022101);
+
+-->
+	
+	
+</beans>

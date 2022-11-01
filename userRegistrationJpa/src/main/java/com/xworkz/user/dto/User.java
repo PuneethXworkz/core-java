@@ -16,10 +16,10 @@ import javax.persistence.Table;
 @Entity
 @Table(name="user")
 
-@NamedQueries(value = { @NamedQuery(name="findByEmail",query="select u from User u where u.email =:email"), 
-						@NamedQuery(name="findById",  query="select i from User i where i.id=:id")
+@NamedQueries( { @NamedQuery(name="findByEmail",query="select u from User u where u.email =:email"), 
+						//@NamedQuery(name="findById",  query="select i from User i where i.id=:id"),
 						//@NamedQuery(name="updateById",query="update d from User d set age =:age where i.id=:id"),
-						//@NamedQuery(name="deleteById",query="delete e from User e where e.id=:id")
+						@NamedQuery(name="deleteById", query="delete from User e where e.id=:id")
 
 })
 public class User {

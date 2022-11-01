@@ -1,0 +1,18 @@
+package com.xworkz;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service	//this is used for service class, where we write our core business logic of application
+public class HelloWorldService {
+	
+	@Autowired
+	private HelloWorldRepository helloWorldRepository;
+
+	public void save(HelloWorld hello) {
+		System.out.println("---Service---save()----"+hello.getName());
+		
+		helloWorldRepository.save(hello);
+	}
+	
+}

@@ -5,10 +5,8 @@ import java.util.Scanner;
 public class HospitalTesterScanner {
 
 	public static void main(String[] args) {
-		
-		
+				
 		Scanner sc = new Scanner(System.in);
-	
 		HospitalDao hos = new HospitalDao();		
 		
 		System.out.print("Enter Patient Id :");
@@ -30,11 +28,9 @@ public class HospitalTesterScanner {
 		System.out.print("Enter Hospital Name :");
 		String hospitalName =sc.next();
 		System.out.print("Enter Hospital address :");
-		String hospitalAddress =sc.next();
-		
+		String hospitalAddress =sc.next();		
 		
 		HospitalDto dto = new HospitalDto();
-
 		dto.setPatientId(patientId);
 		dto.setName(name);
 		dto.setAddress(address);
@@ -48,30 +44,27 @@ public class HospitalTesterScanner {
 		
 		hos.createHospitalInformation(dto);
 		
-		
 		String option = null;
 		
 		do {
 			System.out.println("Enter 1 to fetch all the hospital data :");
-			System.out.println("Enter 2 to");
-			System.out.println("Enter 3 to ");
-			System.out.println("Enter 4 to ");
+			System.out.println("Enter 2 to update Hospital name by PatientId : ");
+			System.out.println("Enter 3 to get Hospital data by Patient Id :");
+			System.out.println("Enter 4 to delete Patient details by Id : ");
 			System.out.println("Enter choice :");
 			
 			int choice = sc.nextInt();
 			
 			switch(choice) {
 			case 1 : hos.getHospitalInformation();
-					break;
-					
+					break;					
 			case 2 : 
 				System.out.print("Enter existing PatientId :");
 				int existingId = sc.nextInt();
 				System.out.print("Enter name to be updated :");
 				String updatedName = sc.next();
 				hos.updateHopsitalDataById( updatedName, existingId);
-				break;
-				
+				break;				
 			case 3:
 				System.out.print("Enter existing Patient Id :");
 				int existId = sc.nextInt();
@@ -79,30 +72,15 @@ public class HospitalTesterScanner {
 			case 4:
 				System.out.print("Enter existing Patient ID to be deleted :");
 				int existsId = sc.nextInt();
-				hos.deleteHospitalInformationById(existsId);
-			
+				hos.deleteHospitalInformationById(existsId);			
 			default: System.out.println("Given choice cannot be delivered");;
 				
 			}
 			System.out.println("Do you want to continue y/n :");
 			option = sc.next();
-		}
+		}	
 		while(option.equals("y"));
-		
+		sc.close();
 		
 	}
-	
-	
-
-
 }
-
-
-//Assignment
-
-
-/*
- Student Project(id,name,rollNo,age,marks);
- Employee project(id,employeeName,employeeId,salary,designation);
- 
- */

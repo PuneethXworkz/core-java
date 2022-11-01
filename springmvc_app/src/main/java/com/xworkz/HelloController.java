@@ -1,0 +1,48 @@
+package com.xworkz;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class HelloController {
+	
+	public HelloController() {
+		System.out.println("-------HelloController constructor---------");
+	}
+	
+	@Autowired
+	private HelloWorldService helloService;
+	
+	@RequestMapping("hello")
+	public ModelAndView helloMethod() {
+		
+		System.out.println("-----hello method-----------");
+		
+		//welcome is jsp file in the web app folder
+		return new ModelAndView("welcome");		
+	}
+	
+	@RequestMapping("getfood")
+	public ModelAndView getFood() {
+		
+		System.out.println("-----get food-----------");
+		
+		//welcome is jsp file in the web app folder
+		return new ModelAndView("food");		
+	}
+	
+	@RequestMapping("savehello")
+	public ModelAndView saveHello(@ModelAttribute HelloWorld helloWorld) {
+		
+		System.out.println("-----savehello method---------"+helloWorld.getName());
+		
+		helloService.save(helloWorld);
+		
+		//welcome is jsp file in the web app folder
+		return new ModelAndView("welcome");		
+	}
+	
+}

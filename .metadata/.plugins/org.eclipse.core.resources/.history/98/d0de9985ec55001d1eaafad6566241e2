@@ -1,0 +1,13 @@
+package com.xworkz.spring;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class JellyBean implements MobileProcessor {
+
+	public void process() {
+		
+		System.out.println("World's mostly used processor");
+	}
+
+}

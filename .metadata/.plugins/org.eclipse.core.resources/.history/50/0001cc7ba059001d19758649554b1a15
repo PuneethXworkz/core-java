@@ -1,0 +1,21 @@
+package com.xworkz;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class HelloWorldRepositoryImpl implements HelloWorldRepository {
+
+	@Autowired
+	private EntityManagerFactory factory;
+	
+	EntityManager manager = null;
+	
+	public boolean save(HelloWorld helloWorld) {
+		
+		
+		return false;
+	}
+
+}

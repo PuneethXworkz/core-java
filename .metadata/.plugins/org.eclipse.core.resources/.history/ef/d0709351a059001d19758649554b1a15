@@ -1,0 +1,10 @@
+package com.xworkz;
+
+public class HelloWorldRepositoryImpl implements HelloWorldRepository {
+
+	public boolean save(HelloWorld helloWorld) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

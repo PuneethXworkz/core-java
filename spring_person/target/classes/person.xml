@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="person" class="com.xworkz.person.Person">
+    <property name="id" value="101"></property>
+    <property name="name" value="Sakshi"></property>
+    <property name="address" value="Sakshi Nagar"></property>  
+    <property name="listOfCars" ref="car" ></property>
+     </bean>
+    
+     <bean id="car" class="com.xworkz.person.Car">    
+    <!-- Setter Injection(String, int type) example -->
+    <!-- One class is one bean  -->
+    <property name="id" value="7877"></property>
+    <property name="name" value="Fiat"></property>
+    <property name="model" value="Punto"></property>  
+    <property name="price" value="1349000.00"></property>  
+    </bean>    
+    
+   <!--  <bean id="car" class="com.xworkz.person.Car">
+    <property name="id" value="7875"></property>
+    <property name="name" value="KIA"></property>
+    <property name="model" value="Seltos"></property>  
+    <property name="price" value="1879000.00"></property>     
+    </bean> -->
+
+<!-- the above bean tag represent the java object code
+bean is  nothing an object
+every bean will have two attributes,
+id is alias name
+class is fully qualified pojo class name
+-->
+	
+	
+</beans>

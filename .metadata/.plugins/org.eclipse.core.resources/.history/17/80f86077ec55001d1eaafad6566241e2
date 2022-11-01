@@ -1,0 +1,14 @@
+package com.xworkz.spring;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MediaTech implements MobileProcessor {
+
+	public void process() {
+
+		System.out.println("Second Best Processor");
+		
+	}
+
+}

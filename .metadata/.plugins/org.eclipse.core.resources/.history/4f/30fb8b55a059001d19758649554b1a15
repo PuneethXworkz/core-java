@@ -1,0 +1,15 @@
+package com.xworkz;
+
+import javax.persistence.EntityManagerFactory;
+
+public class HelloWorldRepositoryImpl implements HelloWorldRepository {
+
+	private EntityManagerFactory factory;
+	
+	
+	public boolean save(HelloWorld helloWorld) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

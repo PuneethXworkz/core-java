@@ -26,7 +26,7 @@ public class EmployeeTester {
 		transaction.begin();		//start persistence area
 	
 //		save the data
-		manager.persist(emp);
+		//manager.persist(emp);
 		
 //		emp.setName("Madava");
 	//	emp.setName("Chanava");
@@ -59,7 +59,7 @@ public class EmployeeTester {
 		
 	//	System.out.println("Employee info :"+employee.toString());
 		
-		//getAllEmployees();
+		getAllEmployees();
 	//	getEmployeeName();
 	}
 	

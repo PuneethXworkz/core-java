@@ -1,0 +1,39 @@
+package com.xworkz.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+
+@Configuration		//any class having @configuration will have all the configuartiuons
+@ComponentScan("com.xworkz") 		// we need to give package name
+@EnableWebMvc
+public class MvcConfig {
+
+	public MvcConfig() {
+		
+		System.out.println("-----------MvcConfig Constructor--------------");
+	}
+	
+	
+	/*View Resolver will take  information of our all jsp/html pages,
+	 we need to configure  where the file location with prefix = /(current directory),
+	 suffix = .jsp in InternalViewResolver class
+	 ModelAnd View return  fileName in controller class
+	 prefix + filename+suffix ===/filename.jsp */
+	
+	public ViewResolver setupViewResolver() {
+		return new InternalResourceViewResolver("/", ".jsp");
+	}	
+	@Bean
+	public ViewResolver getViewResolver() {
+		System.out.println("---------setupViewResolver-----------");
+
+	    InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+	    viewResolver.setPrefix("/WEB-INF/views/");
+	    viewResolver.setSuffix(".jsp");
+	    return viewResolver;
+	}
+}

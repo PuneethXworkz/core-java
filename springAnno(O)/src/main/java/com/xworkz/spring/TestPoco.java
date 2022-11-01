@@ -1,0 +1,20 @@
+package com.xworkz.spring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+
+//Spring core Annotations
+
+public class TestPoco {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new AnnotationConfigApplicationContext(AnnoConfig.class);
+		
+		Poco poco = context.getBean(Poco.class);
+		poco.config();
+	}
+	
+	
+}

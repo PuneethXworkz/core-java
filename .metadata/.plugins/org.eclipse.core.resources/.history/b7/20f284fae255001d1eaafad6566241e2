@@ -1,0 +1,9 @@
+package com.xworkz.spring;
+
+public class TestPoco {
+
+	Poco fs = new Poco();
+	fs.config();
+	
+	
+}

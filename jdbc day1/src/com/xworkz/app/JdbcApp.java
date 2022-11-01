@@ -20,7 +20,7 @@ public class JdbcApp {
 		
 		//step 1.load mysql driver		
 		try {
-			Class.forName("com.mysql.jdbc.Driver");//to us ethis we need to add mysql driver jar
+			Class.forName(" com.mysql.jdbc.Driver ");//to us this we need to add mysql driver jar
 			
 			//step to create connection			
 			Connection con = DriverManager.getConnection(URL, USERNAME,PASSWORD);

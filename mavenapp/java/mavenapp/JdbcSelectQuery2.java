@@ -36,7 +36,7 @@ public class JdbcSelectQuery2 {
 			while(rs.next()) {
 		//next method is boolean type, returns true if records are present in the table,else throws an exception
 				
-				System.out.print(rs.getInt(1));//resultSet Index
+				System.out.print("StudentId :"+rs.getInt(1));//resultSet Index
 				System.out.print("StudentName :"+rs.getString(2));
 				System.out.print(" RollNo :"+rs.getString("rollno"));//column name
 				System.out.println(" StudentAddress :"+rs.getString("address"));
@@ -45,8 +45,7 @@ public class JdbcSelectQuery2 {
 			
 		} catch (SQLException e) {
 
-			e.printStackTrace();
-			
+			e.printStackTrace();			
 		}		
 	}
 

@@ -1,0 +1,11 @@
+package com.xworkz.spring;
+
+public class MediaTech implements MobileProcessor {
+
+	public void process() {
+
+		System.out.println("Second Best Processor");
+		
+	}
+
+}

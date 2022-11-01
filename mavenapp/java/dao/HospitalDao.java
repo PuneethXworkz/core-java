@@ -37,10 +37,11 @@ public class HospitalDao {
 			
 		//step 4 : execute query
 			int count =psmt.executeUpdate();
-			System.out.println("Oner record Inserted------"+count);
+			System.out.println("One record Inserted------"+count);
 
 			//step 5 : close connection
-			con.close();
+			//con.close();
+			psmt.close();
 			
 		} catch (SQLException e) {
 
@@ -59,7 +60,7 @@ public class HospitalDao {
 			ResultSet rs = psmt.executeQuery();
 			while(rs.next()) {
 				
-				//HospitalDto dto = new HospitalDto();
+				HospitalDto dto = new HospitalDto();
 				
 				dto.setPatientId(rs.getInt(1));
 				dto.setName(rs.getString(2));
@@ -74,7 +75,8 @@ public class HospitalDao {
 				
 				System.out.println("Hospital data :"+dto.toString());
 			}
-			con.close();
+		//	con.close();
+			psmt.close();
 
 		} catch (SQLException e) {
 
@@ -96,7 +98,8 @@ public class HospitalDao {
 			
 			int count = psmt.executeUpdate();			
 			System.out.println("1 record updated :"+count);			
-			con.close();
+			//con.close();
+			psmt.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -127,6 +130,8 @@ public class HospitalDao {
 				dto.setHospitalName(rs.getString(9));
 				dto.setHospitalAddress(rs.getString(10));								
 			}			
+			psmt.close();
+		//	con.close();
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -146,6 +151,8 @@ public class HospitalDao {
 			int count =psmt.executeUpdate();
 			System.out.println("1 record deleted"+ count);
 		
+			psmt.close();
+			con.close();
 		} catch (SQLException e) {
 
 			e.printStackTrace();

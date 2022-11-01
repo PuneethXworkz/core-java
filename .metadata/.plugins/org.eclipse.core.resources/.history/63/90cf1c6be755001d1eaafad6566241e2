@@ -1,0 +1,10 @@
+package com.xworkz.spring;
+
+public class JellyBean implements MobileProcessor {
+
+	public void process() {
+		
+		System.out.println("World's mostly used processor");
+	}
+
+}
