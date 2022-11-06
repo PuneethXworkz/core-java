@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;hibernate_1&apos; to &apos;hibernate1&apos;" description="Rename resource &apos;hibernate_1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/hibernate_1" name="hibernate1" stamp="1664170322610" updateReferences="true"/>&#x0A;<refactoring comment="Delete resource &apos;hibernate_demo/src/main/java/com/adam/app/Class.java&apos;" deleteContents="false" description="Delete resource &apos;hibernate_demo/src/main/java/com/adam/app/Class.java&apos;" element1="/hibernate_demo/src/main/java/com/adam/app/Class.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1664262415884"/>
-</session>

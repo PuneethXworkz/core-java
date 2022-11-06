@@ -1,7 +1,0 @@
-package com.xworkz;
-
-public interface HelloWorldRepository {
-
-	boolean save(HelloWorld helloWorld);
-	
-}

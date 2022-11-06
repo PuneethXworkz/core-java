@@ -1,9 +1,0 @@
-package java.com.xworkz;
-
-public class MvcController {
-
-	
-	public void add() {
-		
-	}
-}
