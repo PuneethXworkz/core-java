@@ -1,6 +1,5 @@
-package com.online.bank.dao;
 
-import java.util.List;
+package com.online.bank.dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -45,8 +44,8 @@ public class BankDaoImpl implements BankDao{
 
 	@Override
 	public Bank findByBankName(String bankName) {
+		Bank bank = null;
 		System.out.println("-----find Bank---dao");
-		Bank bank = null;		
 		try {			
 			manager = factory.createEntityManager();
 			Query query= manager.createQuery("SELECT b FROM Bank b WHERE b.bankName=:bankName");
@@ -75,17 +74,15 @@ public class BankDaoImpl implements BankDao{
 			Query query = manager.createQuery(updateJpql);
 			query.setParameter("bankName", bankName);
 			query.setParameter("address", address);
-			query.executeUpdate();
+		int count =	query.executeUpdate();
 			
 			transaction.commit();			
-			System.out.println("---Address updated successfully---");
+			System.out.println("---Address updated successfully---"+count);
 		} catch (Exception e) {
 		e.printStackTrace();
 		}finally {
 			manager.close();
 		}
-		
-	//query="update d from User d set d.age =:age where d.id=:id"
 		return null;
 	}
 

@@ -1,6 +1,5 @@
 package com.online.bank.dao;
 
-import java.util.List;
 
 import com.online.bank.dto.Bank;
 

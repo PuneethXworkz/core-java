@@ -5,13 +5,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Bank details</title>
+<title>Updated Customer details</title>
 </head>
 <body>
 <div>
-<h2>Here is your searched Customer details</h2>
+<h2>Here is your Updated Customer details</h2>
 <table>
-<thead>
 <th>Id </th>
 <th>FirstName </th>
 <th>LastName </th>
@@ -25,28 +24,26 @@
 <th> GovtId</th>
 <th> AccountNumber</th>
 <th> BankName</th>
-
 </thead>
 <tbody>
-<c:forEach var="customer" items="${customers}">
+<c:forEach var="update" items="${updates}">
 <tr>
-<td>${customer.id}</td>
-<td>${customer.firstName}</td>
-<td>${customer.lastName}</td>
-<td>${customer.address}</td>
-<td>${customer.userName}</td>
-<td>${customer.mailId}</td>
-<td>${customer.password}</td>
-<td>${customer.mobileNo}</td>
-<td>${customer.gender}</td>
-<td>${customer.customerId}</td>
-<td>${customer.govtId}</td>
-<td>${customer.accountNumber}</td>
-<td>${customer.bankName}</td>
+<td>${update.id}</td>
+<td>${update.firstName}</td>
+<td>${update.lastName}</td>
+<td>${update.address}</td>
+<td>${update.userName}</td>
+<td>${update.mailId}</td>
+<td>${update.password}</td>
+<td>${update.mobileNo}</td>
+<td>${update.gender}</td>
+<td>${update.customerId}</td>
+<td>${update.govtId}</td>
+<td>${update.accountNumber}</td>
+<td>${update.bankName}</td>
 </tr>
 </c:forEach>
 </tbody>
-
 </table>
 </div>
 </body>

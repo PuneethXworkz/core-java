@@ -1,6 +1,8 @@
 package com.online.bank.dto;
 
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -27,5 +29,6 @@ public class Customer extends User {
 	@OneToOne
 	private Bank bank;
 	private String bankName;
+	private String typeOfAccount;
 	
 }

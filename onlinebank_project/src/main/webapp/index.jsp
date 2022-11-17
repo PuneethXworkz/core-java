@@ -5,7 +5,13 @@
  <html>
 <body>
 <div align="left"  >
-<h2>New Bank Opening Ceremony</h2>
+<h2>Welcome to online Banking Project</h2>
+
+<!-- <form action="">
+<input type="submit" value="Click_here_for_SignUp"> 
+</form> -->
+
+
 <form action="banksave" method="post">
 <pre>
 BankName	: <input type="text" name="bankName">
@@ -15,9 +21,6 @@ Address		: <input type="text" name="address">
 <input type="submit" value="CreateBank">
 </pre></form>
 
-<h3>${bankName }</h3>
-
-
 <h3>Search Bank by Name</h3>
 <form action="findbank" method="get">
 <pre>
@@ -26,7 +29,7 @@ BankName	: <input type="text" name="bankName">
 </pre></form>
 
 
-<h3>Update Bank address by Name</h3>
+<!-- <h3>Update Bank address by Name</h3>
 <form action="updatebankaddress" method="get">
 <pre>
 Enter existing BankName	: <input type="text" name="bankName">
@@ -34,7 +37,7 @@ Enter address to be updated : <input type="text" name="address">
 <input type="submit" value="UpdateAddress">
 </pre></form>
 
-<!--  -->
+
 
 <h3>Old Bank deleting ceremony</h3>
 <form action="deletebank" method="get">
@@ -42,10 +45,7 @@ Enter address to be updated : <input type="text" name="address">
 Enter BankName to be deleted	: <input type="text" name="bankName">
 <input type="submit" value="DeleteBank">
 </pre></form>
-
-
-
-
+ -->
 </div>
 </body>
 </html>

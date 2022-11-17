@@ -1,11 +1,11 @@
 package com.online.bank.controller;
 
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import com.online.bank.dto.Bank;
 import com.online.bank.service.BankService;
@@ -30,10 +30,10 @@ public class BankController {
 	
 	
 @RequestMapping(value = "findbank", method = RequestMethod.GET)
-	public ModelAndView findBankByName(@ModelAttribute String bankName) {
+	public ModelAndView findBankByName(@RequestParam String bankName) {
 		System.out.println("----findBankByName---controller---");
-		Bank bank= bankService.findByBankName(bankName);
-		return new ModelAndView("customer");
+		Bank listBank= (Bank) bankService.findByBankName(bankName);
+		return new ModelAndView("customer","banks",listBank);
 	}
 	
 @RequestMapping(value = "updatebankaddress", method = RequestMethod.GET)

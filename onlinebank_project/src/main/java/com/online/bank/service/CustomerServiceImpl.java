@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.online.bank.dao.CustomerDao;
+import com.online.bank.dto.Bank;
 import com.online.bank.dto.Customer;
 import com.online.bank.util.GenerateAccountNo;
 import com.online.bank.util.GenerateCustomerId;
@@ -16,7 +17,6 @@ public class CustomerServiceImpl implements CustomerService {
 	public CustomerServiceImpl() {
 	System.out.println("-----CustomerServiceImpl created------");	
 	}
-	
 
 	@Autowired
 	private CustomerDao customerDao;
@@ -26,28 +26,35 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public Customer saveCustomer(Customer customer) {
 			System.out.println("----saveCustomer---service---");
-			customer.setBank(bankService.findByBankName(customer.getBankName()));
+			customer.setBank((Bank) bankService.findByBankName(customer.getBankName()));
 			customer.setAccountNumber(getAccNo());
-			customer.setCustomerId(getAccNo());
+			customer.setCustomerId(getCusId());
 			
 		return customerDao.saveCustomer(customer);
 	}
 
 	@Override
 	public List<Customer> findByCustomerName(String firstName) {
-		// TODO Auto-generated method stub
-		return null;
+		System.out.println("----findCustomerByName----service---");
+		return customerDao.findByCustomerName(firstName);
 	}
 	
 	public int getAccNo() {
 		return GenerateAccountNo.generateAccNo();
 	}
 	
-	public long getCusId() {
+	public int getCusId() {
 		return GenerateCustomerId.generateCustomerId();
 	}
-	
-	
-	
-	
+
+	@Override
+	public Customer updateCustomerAddressByName(String firstName, String address) {
+		System.out.println("---updateCustomerAddressByName---service---");
+		return customerDao.updateCustomerAddressByName(firstName, address);
+	}
+
+	@Override
+	public void deleteCustomerDetailsByName(String firstName) {
+		customerDao.deleteCustomerDetailsByName(firstName);	
+	}	
 }
